@@ -135,7 +135,7 @@
   .logo-img {
     width: 60px;
     height: auto;
-    transform: translateY(-5px); /* رفع الصورة 20px لأعلى */
+    transform: translateY(5px); /* رفع الصورة 20px لأعلى */
     object-fit: contain;
   }
   
