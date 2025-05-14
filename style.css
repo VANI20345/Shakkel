@@ -136,6 +136,7 @@
     width: 60px;
     height: auto;
     transform: translateY(-10px); /* رفع الصورة 20px لأعلى */
+    transform: translateY(-40px); /* رفع الصورة 20px لأعلى */
     object-fit: contain;
   }
   
@@ -143,7 +144,6 @@
     display: flex;
     align-items: center;
     position: relative; /* إضافة هذه الخاصية */
-    top: -10px; /* مقدار الرفع المطلوب */
   }
   
   .nav-menu {
