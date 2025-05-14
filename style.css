@@ -136,7 +136,6 @@
     width: 60px;
     height: auto;
     transform: translateY(-10px); /* رفع الصورة 20px لأعلى */
-    transform: translateY(-40px); /* رفع الصورة 20px لأعلى */
     object-fit: contain;
   }
   
