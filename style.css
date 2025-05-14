@@ -132,12 +132,7 @@
     color: var(--primary-color);
     font-weight: 800;
   }
-  .logo-img {
-    width: 60px;
-    height: auto;
-    transform: translateY(5px); /* رفع الصورة 20px لأعلى */
-    object-fit: contain;
-  }
+  
   
   .main-nav {
     display: flex;
