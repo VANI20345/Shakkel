@@ -144,7 +144,6 @@
     align-items: center;
     position: relative; /* إضافة هذه الخاصية */
     top: -10px; /* مقدار الرفع المطلوب */
-    transform: translateY(-65px);
   }
   
   .nav-menu {
