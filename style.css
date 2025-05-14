@@ -133,9 +133,9 @@
     font-weight: 800;
   }
   .logo-img {
-    width: 250px;
+    width: 150px;
     height: auto;
-    transform: translateY(-100px); /* رفع الصورة 20px لأعلى */
+    transform: translateY(-1px); /* رفع الصورة 20px لأعلى */
     object-fit: contain;
   }
   
@@ -144,14 +144,12 @@
     align-items: center;
     position: relative; /* إضافة هذه الخاصية */
     top: -10px; /* مقدار الرفع المطلوب */
-    transform: translateY(-65px);
   }
   
   .nav-menu {
     display: flex;
     gap: 30px;
     align-items: center;
-    margin-top: -65px; /* بدلاً من تعديل الـ top */
     
   }
   
