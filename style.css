@@ -108,6 +108,7 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 100;
     padding: 15px 0;
+    height: 70px; /* ارتفاع ثابت للهيدر */
   }
   
   .header .container {
@@ -131,16 +132,27 @@
     color: var(--primary-color);
     font-weight: 800;
   }
+  .logo-img {
+    width: 250px;
+    height: auto;
+    transform: translateY(-100px); /* رفع الصورة 20px لأعلى */
+    object-fit: contain;
+  }
   
   .main-nav {
     display: flex;
     align-items: center;
+    position: relative; /* إضافة هذه الخاصية */
+    top: -10px; /* مقدار الرفع المطلوب */
+    transform: translateY(-65px);
   }
   
   .nav-menu {
     display: flex;
-    gap: 30px; /* مسافة متساوية بين جميع العناصر */
+    gap: 30px;
     align-items: center;
+    margin-top: -65px; /* بدلاً من تعديل الـ top */
+    
   }
   
   .nav-menu li {
