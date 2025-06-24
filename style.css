@@ -107,19 +107,22 @@
     background: #fff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 100;
-    padding: 15px 0;
-    height: 70px; /* ارتفاع ثابت للهيدر */
+    padding: 10px 0; /* تقليل padding */
+    min-height: 70px; /* استخدام min-height بدلاً من height */
   }
-  
+    
   .header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    min-height: 50px; /* إضافة min-height */
   }
   
   .logo {
     display: flex;
     align-items: center;
+    gap: 15px; /* إضافة مسافة بين الصورة والنص */
+    text-decoration: none; /* إضافة هذا إذا كان اللوجو رابط */
   }
   
   .logo h1 {
@@ -132,13 +135,38 @@
     color: var(--primary-color);
     font-weight: 800;
   }
+
   .logo-img {
-    width: 60px;
-    height: auto;
-    transform: translateY(5px); /* رفع الصورة 20px لأعلى */
+    width: 50px; /* تقليل الحجم قليلاً */
+    height: 50px; /* تحديد ارتفاع ثابت */
     object-fit: contain;
+    border-radius: 8px; /* إضافة حواف مدورة */
+    /* إزالة جميع خصائص transform */
   }
-  
+
+  .logo h1 {
+    font-size: 28px;
+    color: var(--text-color);
+    margin: 0;
+    line-height: 1.2; /* إضافة line-height للتحكم في المحاذاة */
+  }
+
+  /* 6. إضافة تحسينات للأجهزة المحمولة - أضف هذا الكود */
+  @media (max-width: 768px) {
+    .header {
+      padding: 8px 0;
+    }
+    
+    .logo h1 {
+      font-size: 24px;
+    }
+    
+    .logo-img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
   .main-nav {
     display: flex;
     align-items: center;
